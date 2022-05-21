@@ -1,7 +1,19 @@
 {
-  "name": "root",
+  "name": "dc-monorepo",
   "private": true,
+  "scripts": {
+    "dev:docs": "yarn workspace dc-docs dev"
+  },
+  "version": "1.0.0",
+  "description": "dc portals monorepo",
+  "workspaces": [
+    "packages/*"
+  ],
+  "repository": "git@git.db-n.com:joe.czarnecki/dc-monorepo.git",
+  "author": "Joe Czarnecki <joe.czarnecki@db-n.com>",
+  "license": "MIT",
   "devDependencies": {
-    "lerna": "^4.0.0"
+    "lerna": "^4.0.0",
+    "typescript": "^4.6.4"
   }
 }

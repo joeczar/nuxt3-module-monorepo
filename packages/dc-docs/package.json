@@ -1,0 +1,19 @@
+{
+  "name": "dc-docs",
+  "private": true,
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview"
+  },
+  "devDependencies": {
+    "nuxt": "3.0.0-rc.3"
+  },
+  "dependencies": {
+   "dc-objects": "file:../dc-objects",
+   "dc-styles": "file:../dc-styles"
+  }
+}

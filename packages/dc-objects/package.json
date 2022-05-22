@@ -1,5 +1,5 @@
 {
-  "name": "dc-objects",
+  "name": "@dc/objects",
   "version": "1.0.0",
   "license": "MIT",
   "type": "module",
@@ -22,6 +22,9 @@
   },
   "dependencies": {
     "@nuxt/kit": "^3.0.0-rc.3"
+  },
+  "peerDependencies": {
+    "nuxt3": "latest"
   },
   "devDependencies": {
     "@nuxt/module-builder": "latest",

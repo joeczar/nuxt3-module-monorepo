@@ -13,7 +13,6 @@
     "nuxt": "3.0.0-rc.3"
   },
   "dependencies": {
-   "dc-objects": "file:../dc-objects",
-   "dc-styles": "file:../dc-styles"
+    "@dc/objects": "^1.0.0"
   }
 }

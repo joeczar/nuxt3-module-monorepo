@@ -1,0 +1,33 @@
+// tsconfig.json
+{
+  "compilerOptions": {
+    "jsx": "preserve",
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "skipLibCheck": true,
+    "strict": false,
+    "allowJs": true,
+    "noEmit": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true, "declaration": true,
+    "noImplicitAny": false,
+    "removeComments": true,
+    "noLib": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "lib": ["dom", "dom.iterable", "esnext", "webworker"],
+    "forceConsistentCasingInFileNames": true,
+
+  },
+  "exclude": ["node_modules", "**/*/lib", "dist"],
+  "references": [
+    { "path": "./packages/**/tsconfig.json" }, 
+		// if you tsconfig is something different
+    // { "path": "./packages/package-b" },
+    // { "path": "./packages/package-c/" },
+    // { "path": "./packages/interfaces/" },
+  ]
+}

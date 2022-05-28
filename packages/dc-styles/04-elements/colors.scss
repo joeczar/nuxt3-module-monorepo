@@ -1,0 +1,58 @@
+// stylelint-disable scss/at-import-partial-extension, scss/at-extend-no-missing-placeholder
+
+/**
+ * colors classes
+ *
+ * @prefix l
+ */
+
+@import "../01-settings/colors.scss";
+
+.l-color {
+  @each $name, $color in $colors {
+    &-#{"" + $name} {
+      color: $color;
+    }
+  }
+}
+
+.l-bgcolor {
+  @each $name, $color in $colors {
+    &-#{"" + $name} {
+      background-color: $color;
+    }
+  }
+}
+
+.l-gradient {
+  @each $name, $color in $gradients {
+    &-#{"" + $name} {
+      $first-color: first($color);
+      $last-color: last($color);
+
+      background-image: linear-gradient(to bottom, $first-color, $last-color);
+    }
+  }
+}
+
+.l-bgcircle {
+  border-radius: 8000px;
+}
+
+.l-style {
+  // combination of color and background
+  &-primary {
+    @extend .l-color-primary;
+    @extend .l-bgcolor-secondary;
+  }
+
+  &-secondary {
+    @extend .l-color-light;
+    @extend .l-bgcolor-secondary;
+  }
+
+  &-tertiary {
+    @extend .l-color-light;
+    @extend .l-bgcolor-primary;
+  }
+}

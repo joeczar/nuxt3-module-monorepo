@@ -1,0 +1,54 @@
+/**
+ * font style mixin
+ */
+
+@mixin font-set($style) {
+  @if map_has_key($style, family) {
+    font-family: map_get($style, family);
+  }
+
+  @if map_has_key($style, weight) {
+    font-weight: map_get($style, weight);
+  }
+
+  @if map_has_key($style, style) {
+    font-style: map_get($style, style);
+  }
+
+  $sizes: map_get($style, sizes);
+  $lines: map_get($style, lines);
+
+  // nur S und M
+  // why?
+
+  @include breakpoint(small) {
+    line-height: first($lines);
+    font-size: first($sizes);
+  }
+
+  @if length($sizes) == 2 {
+    @include breakpoint(medium) {
+      font-size: last($sizes);
+    }
+  }
+
+  @if length($lines) == 2 {
+    @include breakpoint(medium) {
+      line-height: last($lines);
+    }
+  }
+
+  @if length($sizes) > 2 or length($lines) > 2 {
+    @error "Only S and M allowed.";
+  }
+}
+
+@mixin font-style($name, $styles: $font-styles) {
+  @if map_has_key($styles, $name) {
+    $style: map_get($styles, $name);
+
+    @include font-set($style);
+  } @else {
+    @error "Font style #{$name} not exists";
+  }
+}

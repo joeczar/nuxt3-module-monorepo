@@ -1,6 +1,6 @@
 {
   "name": "@dc/objects",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "type": "module",
   "exports": {
@@ -21,7 +21,9 @@
     "dev:prepare": "nuxt-module-build --stub && nuxi prepare playground"
   },
   "dependencies": {
-    "@nuxt/kit": "^3.0.0-rc.3"
+    "@dc/styles": "^1.0.1",
+    "@nuxt/kit": "^3.0.0-rc.3",
+    "sass": "^1.52.1"
   },
   "peerDependencies": {
     "nuxt3": "latest"

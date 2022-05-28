@@ -1,0 +1,28 @@
+// stylelint-disable scss/at-import-partial-extension
+
+@import "./visibility";
+
+/**
+ * grid.scss system by foundation-sites
+ */
+// extend markup with xlarge
+$breakpoint-classes: (small medium large xlarge);
+
+@import "~foundation-sites-scss/scss/global";
+@import "~foundation-sites-scss/scss/util/util";
+@import "~foundation-sites-scss/scss/xy-grid/xy-grid.scss";
+@import "~foundation-sites-scss/scss/foundation";
+@include foundation-label;
+@include foundation-table;
+@include foundation-menu;
+@include foundation-flex-grid;
+@include foundation-xy-grid-classes(
+  $base-grid: true,
+  $margin-grid: true,
+  $padding-grid: false,
+  $block-grid: true,
+  $collapse: false,
+  $offset: false,
+  $vertical-grid: false,
+  $frame-grid: false
+);

@@ -1,7 +1,7 @@
 {
   "name": "dc-docs",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "scripts": {
     "build": "nuxt build",
@@ -13,6 +13,6 @@
     "nuxt": "3.0.0-rc.3"
   },
   "dependencies": {
-    "@dc/objects": "^1.0.0"
+    "@dc/objects": "^1.0.1"
   }
 }

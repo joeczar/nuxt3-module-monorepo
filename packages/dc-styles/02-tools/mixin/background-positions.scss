@@ -1,0 +1,49 @@
+@mixin responsive {
+  @each $size in (small, medium, large) {
+    &.#{$size} {
+      @include breakpoint($size) {
+        @content;
+      }
+    }
+  }
+}
+
+@mixin background-positions {
+  &.apply-background-position {
+    @each $yposition in (center, top, bottom) {
+      &.center-#{$yposition}-position {
+        &:not(.responsive) {
+          background-position: center $yposition;
+        }
+
+        &.responsive {
+          @include responsive {
+            background-position: center $yposition;
+          }
+        }
+      }
+      &.right-#{$yposition}-position {
+        &:not(.responsive) {
+          background-position: right $yposition;
+        }
+
+        &.responsive {
+          @include responsive {
+            background-position: right $yposition;
+          }
+        }
+      }
+      &.left-#{$yposition}-position {
+        &:not(.responsive) {
+          background-position: left $yposition;
+        }
+
+        &.responsive {
+          @include responsive {
+            background-position: left $yposition;
+          }
+        }
+      }
+    }
+  }
+}

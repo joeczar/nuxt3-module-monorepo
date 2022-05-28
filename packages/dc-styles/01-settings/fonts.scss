@@ -1,0 +1,257 @@
+// stylelint-disable font-family-name-quotes
+/* stylelint-disable */
+/**
+ * Stylelint is disabled, because the file get's destroyed on fixing
+ * font style definition
+ *
+ * props:
+ * - sizes list of props
+ */
+
+$font-family-headline: AmsiProCondensed-Black, Roboto, Arial, sans-serif;
+$font-family: AmsiProNormal-Regular, Roboto, Arial, sans-serif;
+$font-family-bold: AmsiProNormal-Bold, Roboto, Arial, sans-serif;
+$font-size: 16px; // 1 rem
+$font-size-campaign: 18px; // 1 rem
+$font-size-large: 20px;
+$font-size-small: 14px;
+$font-size-smaller: 12px;
+$line-size-small: 22px;
+$font-size-medium: 24px;
+$font-size-tiny: 12px;
+
+$font-styles: (
+  /*
+   * stage headline
+   */ headline-page:
+    (
+      weight: 600,
+      sizes: (
+        28px,
+        46px
+      ),
+      lines: (
+        38px,
+        62px
+      )
+    ),
+  /*
+   * component headline / between components
+   */ headline-component:
+    (
+      weight: 300,
+      sizes: (
+        20px,
+        36px
+      ),
+      lines: (
+        30px,
+        54px
+      )
+    ),
+  /*
+   * larger headline (B2C)
+   */ headline-b2c:
+    (
+      weight: 400,
+      sizes: (
+        24px,
+        28px
+      ),
+      lines: (
+        28px,
+        31px
+      )
+    ),
+  /*
+   * mostly teaser headline
+   */ headline-module:
+    (
+      weight: 400,
+      sizes: (
+        20px,
+        24px
+      ),
+      lines: (
+        24px,
+        34px
+      )
+    ),
+  /*
+  * subline used by o-header, o-headline, c-headline
+  */ subline:
+    (
+      weight: 300,
+      sizes: (
+        18px,
+        22px
+      ),
+      lines: (
+        36px
+      )
+    ),
+  /*
+  * Font type used in the campaign stages
+  */ text-campaign:
+    (
+      weight: 400,
+      sizes: (
+        $font-size-campaign
+      ),
+      lines: (
+        24px
+      )
+    ),
+  /*
+ * small navigation items
+ */ copy-tiny:
+    (
+      sizes: (
+        $font-size-tiny
+      ),
+      lines: (
+        20px
+      )
+    ),
+  /*
+   * image captions, footer, aside misc etc
+   */ copy-small:
+    (
+      sizes: (
+        $font-size-small
+      ),
+      lines: (
+        $line-size-small
+      )
+    ),
+  /*
+   * default copy for card and teaser content
+   */ copy:
+    (
+      sizes: (
+        $font-size-small,
+        $font-size
+      ),
+      lines: (
+        $line-size-small,
+        26px
+      )
+    ),
+  /*
+   * larger copy i.E stage / feature teaser
+   */ copy-large:
+    (
+      weight: 300,
+      sizes: (
+        $font-size,
+        $font-size-large
+      ),
+      lines: (
+        $line-size-small,
+        34px
+      )
+    ),
+  /*
+   * default button
+   */ button:
+    (
+      sizes: (
+        18px
+      ),
+      lines: (
+        40px
+      )
+    ),
+  /*
+   * xlarge  button
+   */ button-xlarge:
+    (
+      sizes: (
+        22px
+      ),
+      lines: (
+        46px
+      )
+    ),
+  /*
+   * medium button
+   */ button-medium:
+    (
+      weight: 600,
+      sizes: (
+        $font-size
+      ),
+      lines: (
+        36px
+      )
+    ),
+  /*
+   * small button
+   */ button-small:
+    (
+      weight: 600,
+      sizes: (
+        $font-size-tiny
+      ),
+      lines: (
+        26px
+      )
+    ),
+  link: (
+    weight: 300,
+    sizes: (
+      18px
+    ),
+    lines: (
+      35px
+    )
+  ),
+  /*
+   * special fonts
+   */ special-hero:
+    (
+      weight: 300,
+      style: italic,
+      sizes: (
+        80px
+      ),
+      lines: (
+        102px
+      )
+    ),
+  /* used by c-testimonials */ special-quote:
+    (
+      weight: 300,
+      sizes: (
+        20px,
+        28px
+      ),
+      lines: (
+        29px,
+        42px
+      )
+    ),
+  special-eyecatcher: (
+    weight: 500,
+    sizes: (
+      $font-size-small,
+      24px
+    ),
+    lines: (
+      $line-size-small,
+      34px
+    )
+  ),
+  headline-campaign-overlay: (
+    weight: 300,
+    sizes: (
+      28px,
+      36px
+    ),
+    lines: (
+      28px,
+      50px
+    )
+  )
+);
+/* stylelint-enable */

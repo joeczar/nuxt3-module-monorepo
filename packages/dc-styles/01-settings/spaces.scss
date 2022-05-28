@@ -1,0 +1,76 @@
+// stylelint-disable scss/no-global-function-names
+
+/**
+ * space definition
+ */
+
+$base-factor: 8px;
+$space-none: 0;
+
+/* 4px */
+$space-inline-block: 0.25rem !default;
+
+/* 8px */
+$space-tiny: 0.5rem !default;
+
+/* 12px */
+$space-smaller: 0.75rem !default;
+
+/* 16px */
+$space-small: 1rem !default;
+
+/* 24px */
+$space-default: 1.5rem !default;
+
+/* 32px */
+$space-medium: 2rem !default;
+
+/* 40px */
+$space-xmedium: 2.5rem !default;
+
+/* 48px */
+$space-large: 3rem !default;
+
+/* 64px */
+$space-xlarge: 4rem !default;
+
+/* 96px */
+$space-xxlarge: 6rem !default;
+
+/* 128px */
+$space-xxxlarge: 8rem !default;
+$space-component: $space-xlarge;
+$space-component-header: $space-large;
+$space-list: (
+  "none": $space-none,
+  "inline-block": $space-inline-block,
+  "tiny": $space-tiny,
+  "smaller": $space-smaller,
+  "small": $space-small,
+  "default": $space-default,
+  "medium": $space-medium,
+  "xmedium": $space-xmedium,
+  "large": $space-large,
+  "xlarge": $space-xlarge,
+  "xxlarge": $space-xxlarge,
+  "xxxlarge": $space-xxxlarge
+);
+
+/**
+ * grid specific
+ */
+
+$grid-margin-gutters: (
+  small: $space-small,
+  medium: $space-medium
+);
+$grid-margin-list: (map-get($grid-margin-gutters, small), map-get($grid-margin-gutters, medium));
+$cell-margin-list: (
+  map-get($grid-margin-gutters, small) * 0.5,
+  map-get($grid-margin-gutters, medium) * 0.5
+);
+
+/* *
+ * teaser specific */
+$teaser-negative-offset: -$space-medium;
+$teaser-max-width: 380px;

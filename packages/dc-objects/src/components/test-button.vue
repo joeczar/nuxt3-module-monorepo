@@ -19,9 +19,11 @@ onMounted(() => {
 
 </script>
 
-<style lang="css" scoped>
+<style lang="scss" scoped>
+@import "@dc/styles";
+
 button {
-  background-color: cyan;
-  color: red;
+  background-color: $color-primary;
+  color: $color-light;
 }
 </style>

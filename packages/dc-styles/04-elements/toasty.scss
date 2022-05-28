@@ -1,0 +1,467 @@
+// stylelint-disable selector-class-pattern
+
+.toast {
+  display: flex;
+  position: relative;
+  transform: translate3d(0, 0, 0);
+  transition: all 0.32s ease-in-out;
+  margin: 0.5em 0;
+  border: 1px solid;
+  border-left: 6px solid transparent;
+  border-radius: 2px;
+  box-shadow: 0 0 9px rgb(0 0 0 / 0.25);
+  padding: 16px;
+  white-space: nowrap;
+  pointer-events: none;
+
+  /* The insides icon/message */
+  & > .message,
+  & > .o-icon {
+    display: inline-block;
+  }
+
+  & > .o-icon {
+    margin-right: $space-small;
+  }
+
+  & > .message {
+    margin-left: $space-small;
+    max-width: 280px;
+    white-space: normal;
+  }
+
+  /* the main container: */
+  &-container {
+    position: fixed;
+    transition: all 1s ease-in-out;
+    z-index: 999999;
+    line-height: initial;
+    pointer-events: none;
+
+    /* the wrapper where the toast messages appends: */
+    .toast-wrapper {
+      position: relative;
+      padding: 0.5em;
+    }
+
+    /* the class that is assigned to the sound player. */
+
+    /* normally, this is a hidden wildcard: */
+    .toast-soundplayer {
+      display: none;
+      visibility: hidden;
+    }
+  }
+
+  /**
+ * Toast messages styles:
+ * -------------------------------------------------- */
+
+  /* each toast message gets this style: */
+
+  /* informational toast class: */
+  &--info {
+    border-color: #91c5f2;
+    background-color: #eaf2fa;
+    color: #31708f;
+  }
+
+  /* successful toast class: */
+  &--success {
+    border-color: #a6ca8a;
+    background-color: #e9ffd9;
+    color: #3c763d;
+  }
+
+  &--successdc {
+    border-color: $color-primary;
+    background-color: $color-primary;
+    color: $color-secondary;
+  }
+
+  /* warning toast class: */
+  &--warning {
+    border-color: #f2c779;
+    background-color: #fff8c4;
+    color: #8a6d3b;
+  }
+
+  /* error toast class: */
+  &--error {
+    border-color: #f5aca6;
+    background-color: #ffecec;
+    color: #a94442;
+  }
+
+  /* error toast class: */
+  &--errordc {
+    border-color: $color-error;
+    background-color: $color-error;
+    color: $color-light;
+  }
+
+  /* this class is assigned to each toast message when autoClose
+ * plugin option is set to BOOLEAN false. */
+
+  /* Normally, this is a pointer events handler: */
+  &.close-on-click {
+    cursor: pointer;
+    pointer-events: auto;
+  }
+
+  /**
+ * Progress bar styles:
+ * ------------------------------------------------------------------------- */
+
+  /* each progress bar gets this style: */
+  &-progressbar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0s ease;
+    opacity: 0.5;
+    width: 0%;
+    height: 4px;
+  }
+
+  /* progress bar color for each toast type: */
+  &-progressbar--info {
+    background-color: #91c5f2;
+  }
+
+  &-progressbar--success {
+    background-color: #a6ca8a;
+  }
+
+  &-progressbar--successdc {
+    background-color: $color-secondary;
+  }
+
+  &-progressbar--warning {
+    background-color: #f2c779;
+  }
+
+  &-progressbar--error {
+    background-color: #f5aca6;
+  }
+
+  &-progressbar--errordc {
+    background-color: $color-light;
+  }
+
+  /**
+ * Available toast transitions:
+ * ------------------------------------------------------------------------- */
+
+  /* TRANSITION 01 - a [fade] transition (DEFAULT TRANSITION): */
+  &-container--fade {
+    right: 0;
+    bottom: 0;
+  }
+
+  &-container--fade .toast-wrapper {
+    display: inline-block;
+  }
+
+  &.fade-init {
+    opacity: 0;
+  }
+
+  &.fade-show {
+    opacity: 1;
+  }
+
+  &.fade-hide {
+    opacity: 0;
+  }
+
+  /* ------------------------------------------------------------------------- */
+
+  /* TRANSITION 02 - a [slideLeftFade] transition: */
+  &-container--slideLeftFade {
+    right: 0;
+    bottom: 0;
+  }
+
+  &-container--slideLeftFade .toast-wrapper {
+    display: inline-block;
+  }
+
+  &.slideLeftFade-init {
+    right: -100%;
+    opacity: 0;
+  }
+
+  &.slideLeftFade-show {
+    right: 0%;
+    opacity: 1;
+  }
+
+  &.slideLeftFade-hide {
+    right: 100%;
+    opacity: 0;
+  }
+
+  /* ------------------------------------------------------------------------- */
+
+  /* TRANSITION 03 - a [slideLeftRightFade] transition: */
+  &-container--slideLeftRightFade {
+    right: 0;
+    bottom: 0;
+  }
+
+  &-container--slideLeftRightFade .toast-wrapper {
+    display: inline-block;
+  }
+
+  &.slideLeftRightFade-init {
+    right: -100%;
+    opacity: 0;
+  }
+
+  &.slideLeftRightFade-show {
+    right: 0%;
+    opacity: 1;
+  }
+
+  &.slideLeftRightFade-hide {
+    right: -100%;
+    opacity: 0;
+  }
+
+  /* ------------------------------------------------------------------------- */
+
+  /* TRANSITION 04 - a [slideRightFade] transition: */
+  &-container--slideRightFade {
+    right: 0;
+    bottom: 0;
+  }
+
+  &-container--slideRightFade .toast-wrapper {
+    display: inline-block;
+  }
+
+  &.slideRightFade-init {
+    left: -100%;
+    opacity: 0;
+  }
+
+  &.slideRightFade-show {
+    left: 0%;
+    opacity: 1;
+  }
+
+  &.slideRightFade-hide {
+    left: 100%;
+    opacity: 0;
+  }
+
+  /* ------------------------------------------------------------------------- */
+
+  /* TRANSITION 05 - a [slideRightLeftFade] transition: */
+  &-container--slideRightLeftFade {
+    right: 0;
+    bottom: 0;
+  }
+
+  &-container--slideRightLeftFade .toast-wrapper {
+    display: inline-block;
+  }
+
+  &.slideRightLeftFade-init {
+    left: -100%;
+    opacity: 0;
+  }
+
+  &.slideRightLeftFade-show {
+    left: 0%;
+    opacity: 1;
+  }
+
+  &.slideRightLeftFade-hide {
+    left: -100%;
+    opacity: 0;
+  }
+
+  /* ------------------------------------------------------------------------- */
+
+  /* TRANSITION 06 - a [slideUpFade] transition: */
+  &-container--slideUpFade {
+    top: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  &-container--slideUpFade .toast-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  &.slideUpFade-init {
+    bottom: -100%;
+    opacity: 0;
+  }
+
+  &.slideUpFade-show {
+    bottom: 0%;
+    opacity: 1;
+  }
+
+  &.slideUpFade-hide {
+    bottom: 100%;
+    opacity: 0;
+  }
+
+  /* ------------------------------------------------------------------------- */
+
+  /* TRANSITION 07 - a [slideUpDownFade] transition: */
+  &-container--slideUpDownFade {
+    top: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  &-container--slideUpDownFade .toast-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  &.slideUpDownFade-init {
+    bottom: -100%;
+    opacity: 0;
+  }
+
+  &.slideUpDownFade-show {
+    bottom: 0%;
+    opacity: 1;
+  }
+
+  &.slideUpDownFade-hide {
+    bottom: -100%;
+    opacity: 0;
+  }
+
+  /* ------------------------------------------------------------------------- */
+
+  /* TRANSITION 08 - a [slideDownFade] transition: */
+  &-container--slideDownFade {
+    top: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  &-container--slideDownFade .toast-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  &.slideDownFade-init {
+    top: -100%;
+    opacity: 0;
+  }
+
+  &.slideDownFade-show {
+    top: 0%;
+    opacity: 1;
+  }
+
+  &.slideDownFade-hide {
+    top: 100%;
+    opacity: 0;
+  }
+
+  /* ------------------------------------------------------------------------- */
+
+  /* TRANSITION 09 - a [slideDownUpFade] transition: */
+  &-container--slideDownUpFade {
+    top: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  &-container--slideDownUpFade .toast-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  &.slideDownUpFade-init {
+    top: -100%;
+    opacity: 0;
+  }
+
+  &.slideDownUpFade-show {
+    top: 0%;
+    opacity: 1;
+  }
+
+  &.slideDownUpFade-hide {
+    top: -100%;
+    opacity: 0;
+  }
+
+  /* ------------------------------------------------------------------------- */
+
+  /* TRANSITION 10 - a [pinItUp] transition: */
+  &-container--pinItUp {
+    top: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  &-container--pinItUp .toast-wrapper {
+    display: inline-block;
+    float: right;
+    height: 25px;
+  }
+
+  &.pinItUp-init {
+    bottom: -100%;
+    opacity: 0;
+  }
+
+  &.pinItUp-show {
+    bottom: 0%;
+    opacity: 1;
+  }
+
+  &.pinItUp-hide {
+    bottom: 100%;
+    opacity: 0;
+  }
+
+  /* ------------------------------------------------------------------------- */
+
+  /* TRANSITION 11 - a [pinItDown] transition: */
+  &-container--pinItDown {
+    top: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  &-container--pinItDown .toast-wrapper {
+    display: inline-block;
+    float: right;
+    height: 25px;
+  }
+
+  &.pinItDown-init {
+    top: -100%;
+    opacity: 0;
+  }
+
+  &.pinItDown-show {
+    top: 0%;
+    opacity: 1;
+  }
+
+  &.pinItDown-hide {
+    top: 100%;
+    opacity: 0;
+  }
+
+  /* ------------------------------------------------------------------------- */
+}

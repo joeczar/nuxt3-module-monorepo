@@ -1,0 +1,14 @@
+// stylelint-disable scss/at-import-partial-extension
+
+/**
+* shared teaser scss
+*/
+@import "../../01-settings/generic.scss";
+
+.has-link {
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: $box-shadow-hover;
+  }
+}

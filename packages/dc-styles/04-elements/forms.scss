@@ -1,0 +1,135 @@
+// stylelint-disable scss/at-import-partial-extension
+
+/**
+ * form field classes
+ *
+ * @prefix ff
+ */
+@import "../02-tools/index.scss";
+
+// Remove Arrow buttons in number inputs (Firefox)
+input[type="number"] {
+  appearance: textfield;
+}
+
+// Remove Arrow buttons in number inputs (Chrome)
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.ff {
+  &-block {
+    @include space-vertical($space-small, margin);
+  }
+
+  &-label,
+  &-error,
+  &-description {
+    display: block;
+    margin-bottom: $space-tiny;
+    line-height: $font-size-small;
+    letter-spacing: 1px;
+    font-size: $font-size-smaller;
+  }
+
+  &-label {
+    color: $form-label;
+  }
+
+  // Used for "radio" and "checkbox" types
+  &-mini-input {
+    cursor: pointer;
+  }
+
+  &-input {
+    @include animated(0.3s ease, border-color color);
+
+    box-sizing: border-box;
+    outline: none;
+    border: $input-border;
+    border-radius: $input-border-radius;
+    cursor: pointer;
+    padding: $space-small;
+    width: 100%;
+    resize: none;
+    font-family: inherit;
+    font-size: $font-size;
+
+    &::placeholder {
+      color: $color-disabled;
+      font-size: $font-size;
+    }
+
+    &:invalid,
+    &.as-invalid {
+      outline: none;
+      border-color: $color-error;
+      box-shadow: none; // FF
+    }
+
+    &:focus {
+      border-color: $color-primary;
+      box-shadow: $input-border-focus-glow;
+    }
+  }
+
+  &-description {
+    margin-top: $space-tiny;
+    color: $form-label;
+  }
+
+  &-error {
+    margin-top: $space-tiny;
+    color: $color-error;
+  }
+
+  &-icon {
+    color: $color-success;
+  }
+
+  &-icon,
+  &-icon-layer {
+    display: flex;
+    position: absolute;
+    top: $input-border-width;
+    right: $space-small;
+    bottom: $input-border-width;
+    align-items: center;
+
+    & + .ff-input {
+      padding-right: 40px;
+    }
+  }
+
+  &-icon-layer {
+    border-left: $input-border;
+    cursor: pointer;
+    padding-left: $space-small * 0.8;
+    color: $color-secondary;
+    pointer-events: none;
+  }
+
+  &-group {
+    position: relative;
+
+    &.as-size-small,
+    &.as-size-medium {
+      .ff-input {
+        border-radius: $input-border-radius-small;
+        padding: $space-tiny;
+      }
+
+      .ff-icon {
+        right: $space-tiny;
+      }
+    }
+
+    &.as-size-medium {
+      .ff-input {
+        height: 40px;
+      }
+    }
+  }
+}

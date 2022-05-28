@@ -1,0 +1,9 @@
+// stylelint-disable scss/at-import-partial-extension, scss/at-mixin-pattern
+
+/* selects root per default */
+@mixin IE11-only($selector: "&") {
+  _:-ms-fullscreen,
+  :root #{$selector} {
+    @content;
+  }
+}

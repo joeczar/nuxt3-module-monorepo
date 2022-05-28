@@ -1,0 +1,8 @@
+/**
+ * visibility classes by foundation
+ */
+
+@import "foundation-sites-scss/scss/util/util";
+@import "foundation-sites-scss/scss/global";
+@import "foundation-sites-scss/scss/components/visibility";
+@include foundation-visibility-classes;

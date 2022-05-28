@@ -1,0 +1,9 @@
+@import "../01-settings/colors.scss";
+
+:root {
+  --safe-area-inset-top: env(safe-area-inset-top);
+
+  @each $name, $color in $colors {
+    --data-color-#{"" + $name}: #{"" + $color};
+  }
+}

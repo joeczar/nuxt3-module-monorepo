@@ -1,0 +1,15 @@
+%inline-xy-center {
+  text-align: center;
+
+  &::before {
+    display: inline-block;
+    width: 0;
+    height: 100%;
+    vertical-align: middle;
+    content: "";
+  }
+
+  > * {
+    vertical-align: middle;
+  }
+}

@@ -1,0 +1,16 @@
+@import "../../01-settings/index";
+
+@mixin colored-background($heights, $color: $color-highlight) {
+  position: relative;
+
+  &::before {
+    @include property(height, $heights);
+
+    display: block;
+    position: absolute;
+    top: 0;
+    background-color: $color;
+    width: 100%;
+    content: "";
+  }
+}

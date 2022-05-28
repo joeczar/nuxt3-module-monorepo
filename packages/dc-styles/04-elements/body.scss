@@ -1,0 +1,7 @@
+// Body Class Modifiers
+
+body {
+  &.has-open-overlay {
+    overflow: hidden;
+  }
+}

@@ -1,0 +1,21 @@
+@use "sass:math";
+
+// stylelint-disable-next-line
+@mixin widthArray() {
+  @for $i from 1 through 15 {
+    @for $j from 1 through $i {
+      &-#{$j}-#{$i} {
+        width: math.div($j, $i) * 100%;
+      }
+    }
+  }
+
+  &.pad {
+    @each $name, $size in $space-list {
+      &-#{$name} {
+        padding-right: $size;
+        padding-left: $size;
+      }
+    }
+  }
+}

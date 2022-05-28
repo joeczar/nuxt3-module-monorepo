@@ -1,0 +1,22 @@
+// stylelint-disable scss/at-import-partial-extension
+
+/**
+ * special user content styles
+ * @prefix uc
+ */
+@import "../01-settings/colors.scss";
+
+.uc {
+  &-link {
+    cursor: pointer;
+    text-decoration: underline;
+    color: $color-primary;
+    font-size: inherit;
+  }
+}
+
+.v-else-placeholder {
+  display: inline;
+  max-width: 1px;
+  max-height: 1px;
+}

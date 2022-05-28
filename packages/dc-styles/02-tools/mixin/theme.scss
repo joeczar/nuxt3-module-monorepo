@@ -1,0 +1,31 @@
+/**
+ define theme specific layout, use root if you want to define body properties
+
+ @example
+    @include theme(customer, true) {
+      background-color: red;
+    }
+
+    .your-class {
+      @include theme(customer) {
+        block: test
+      }
+    }
+ */
+
+@mixin theme($name, $root: false) {
+  // display warnings if theme not defined
+  @if index($themes, $name) == false {
+    @warn "Theme (#{$name}) not defined";
+  }
+
+  @if $root {
+    body.theme-#{$name} {
+      @content;
+    }
+  } @else {
+    body.theme-#{$name} & {
+      @content;
+    }
+  }
+}

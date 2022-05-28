@@ -1,0 +1,138 @@
+// stylelint-disable scss/at-import-partial-extension
+
+@import "../02-tools/index.scss";
+
+@mixin margins($size) {
+  &-t {
+    margin-top: $size;
+  }
+
+  &-b {
+    margin-bottom: $size;
+  }
+
+  &-l {
+    margin-left: $size;
+  }
+
+  &-r {
+    margin-right: $size;
+  }
+
+  &-tb {
+    margin-top: $size;
+    margin-bottom: $size;
+  }
+
+  &-lr {
+    margin-right: $size;
+    margin-left: $size;
+  }
+
+  &-all {
+    margin: $size;
+  }
+}
+
+@mixin paddings($size) {
+  &-t {
+    padding-top: $size;
+  }
+
+  &-b {
+    padding-bottom: $size;
+  }
+
+  &-l {
+    padding-left: $size;
+  }
+
+  &-r {
+    padding-right: $size;
+  }
+
+  &-tb {
+    padding-top: $size;
+    padding-bottom: $size;
+  }
+
+  &-lr {
+    padding-right: $size;
+    padding-left: $size;
+  }
+
+  &-all {
+    padding: $size;
+  }
+}
+
+.space {
+  @each $name, $size in $space-list {
+    &-#{$name}-m {
+      @include margins($size);
+
+      &-l {
+        @include breakpoint(large up) {
+          @include margins($size);
+        }
+      }
+
+      &-m {
+        @include breakpoint(medium up) {
+          @include margins($size);
+        }
+      }
+
+      &-md {
+        @include breakpoint(medium down) {
+          @include margins($size);
+        }
+      }
+
+      &-mo {
+        @include breakpoint(medium only) {
+          @include margins($size);
+        }
+      }
+
+      &-s {
+        @include breakpoint(small down) {
+          @include margins($size);
+        }
+      }
+    }
+    &-#{$name}-p {
+      @include paddings($size);
+
+      &-l {
+        @include breakpoint(large up) {
+          @include paddings($size);
+        }
+      }
+
+      &-m {
+        @include breakpoint(medium up) {
+          @include paddings($size);
+        }
+      }
+
+      &-md {
+        @include breakpoint(medium down) {
+          @include paddings($size);
+        }
+      }
+
+      &-mo {
+        @include breakpoint(medium only) {
+          @include paddings($size);
+        }
+      }
+
+      &-s {
+        @include breakpoint(small down) {
+          @include paddings($size);
+        }
+      }
+    }
+  }
+}

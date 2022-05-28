@@ -1,0 +1,72 @@
+/**
+ * color definition
+ */
+
+// not use this variable, use named versions
+$color-1: #f2b700;
+$color-2: #56246f;
+$color-3: #fff;
+$color-4: #1b1b1b;
+$color-5: #dc3600;
+$color-6: #00a53c;
+$grey-100: #f2f2f2;
+$grey-200: #ccc;
+$grey-300: #999;
+$grey-400: #6c6c6c; // color-text-links
+
+$color-soft-grey: $grey-100;
+$color-light-grey: $grey-200;
+$color-grey: $grey-300;
+$text-grey: $grey-400;
+$gradient-1: (#f2b700, #f2b700);
+$gradient-2: (#f2b700, #f2b700);
+$gradient-3: (#f2b700, #f2b700);
+
+// use named variables
+$color-primary: $color-2;
+$color-secondary: $color-1;
+$color-highlight: $color-grey;
+$color-highlight-bg: $color-soft-grey;
+$color-neutral: $color-4;
+$color-light: $color-3;
+$color-disabled: $color-light-grey;
+$color-text-links: $grey-400;
+$color-beige: $color-soft-grey;
+$color-primary-disabled: rgb(86 36 111 / 0.5);
+$color-secondary-disabled: rgb(242 183 0 / 0.5);
+$color-label: $color-light-grey;
+$color-success: $color-6;
+$color-error: $color-5;
+$color-mydc-points-plus: $color-6;
+$color-mydc-points-minus: $color-5;
+$color-mydc-points-neutral: $grey-400;
+$gradient-primary: $gradient-1;
+$gradient-secondary: $gradient-2;
+$gradient-soft: $gradient-3;
+$color-text-dark: $color-4;
+
+// maps
+$colors: (
+  primary: $color-primary,
+  secondary: $color-secondary,
+  highlight: $color-highlight,
+  neutral: $color-neutral,
+  light: $color-light,
+  grey: $color-light-grey,
+  soft: $color-soft-grey,
+  error: $color-error,
+  success: $color-success,
+  muted: $color-text-links
+);
+
+// maps
+$gradients: (
+  primary: $gradient-primary,
+  secondary: $gradient-secondary,
+  soft: $gradient-soft
+);
+
+// styles are a combination of colors
+
+// forms
+$form-label: $color-highlight;

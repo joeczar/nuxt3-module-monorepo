@@ -1,0 +1,450 @@
+// stylelint-disable scss/at-import-partial-extension
+
+/**
+ * Layout classes
+ *
+ * @prefix l
+ */
+
+@import "../02-tools/index.scss";
+
+
+.l {
+  &-hide-on-empty:empty {
+    display: none;
+  }
+
+  &-holder {
+    position: relative;
+  }
+
+  &-show {
+    // The ONLY legal position to contain !important
+    display: initial !important;
+
+    &-on-small {
+      display: none !important;
+
+      @include breakpoint(small only) {
+        // The ONLY legal position to contain !important
+        display: initial !important;
+      }
+    }
+
+    &-on-medium {
+      display: none !important;
+
+      &-up {
+        @include breakpoint(medium up) {
+          // The ONLY legal position to contain !important
+          display: initial !important;
+        }
+      }
+
+      &-down {
+        @include breakpoint(medium down) {
+          // The ONLY legal position to contain !important
+          display: initial !important;
+        }
+      }
+
+      @include breakpoint(medium only) {
+        // The ONLY legal position to contain !important
+        display: initial !important;
+      }
+    }
+
+    &-on-large {
+      display: none !important;
+
+      // The ONLY legal position to contain !important
+      @include breakpoint(large up) {
+        display: initial !important;
+      }
+    }
+  }
+
+  &-hide {
+    // The ONLY legal position to contain !important
+    display: none !important;
+
+    &-on-small {
+      @include breakpoint(small only) {
+        // The ONLY legal position to contain !important
+        display: none !important;
+      }
+    }
+
+    &-on-medium {
+      &-up {
+        @include breakpoint(medium up) {
+          // The ONLY legal position to contain !important
+          display: none !important;
+        }
+      }
+
+      &-down {
+        @include breakpoint(medium down) {
+          // The ONLY legal position to contain !important
+          display: none !important;
+        }
+      }
+
+      @include breakpoint(medium only) {
+        // The ONLY legal position to contain !important
+        display: none !important;
+      }
+    }
+
+    &-on-large {
+      // The ONLY legal position to contain !important
+      @include breakpoint(large up) {
+        display: none !important;
+      }
+    }
+  }
+
+  // two colum layout, last colum align to right
+  &-split {
+    display: flex;
+    align-items: center;
+
+    > .l-split-cell:first-child {
+      flex-grow: 1;
+    }
+  }
+
+  &-centered {
+    text-align: center;
+
+    &-for-medium {
+      @include breakpoint(medium) {
+        text-align: center;
+      }
+    }
+
+    &-for-medium-down {
+      @include breakpoint(medium down) {
+        text-align: center;
+      }
+    }
+
+    &-for-large {
+      @include breakpoint(large) {
+        text-align: center;
+      }
+    }
+
+    &-for-small-only {
+      @include breakpoint(small only) {
+        text-align: center;
+      }
+    }
+  }
+
+  &-right-align {
+    text-align: right;
+  }
+
+  &-valign {
+    vertical-align: middle;
+
+    &-childs {
+      > * {
+        vertical-align: middle;
+      }
+    }
+  }
+
+  &-flex {
+    display: flex;
+  }
+
+  &-row {
+    display: flex;
+
+    &.on-large {
+      @include breakpoint(large up) {
+        flex-direction: row;
+      }
+    }
+
+    &.on-medium {
+      @include breakpoint(medium only) {
+        flex-direction: row;
+      }
+    }
+
+    &.on-small {
+      @include breakpoint(small only) {
+        flex-direction: row;
+      }
+    }
+
+    &.no-wrap {
+      flex-wrap: nowrap;
+
+      &-on-large {
+        @include breakpoint(large up) {
+          flex-wrap: nowrap;
+        }
+      }
+
+      &-on-medium {
+        @include breakpoint(medium only) {
+          flex-wrap: nowrap;
+        }
+      }
+
+      &-on-small {
+        @include breakpoint(small only) {
+          flex-wrap: nowrap;
+        }
+      }
+    }
+
+    &.wrap {
+      flex-wrap: wrap;
+
+      &-on-large {
+        @include breakpoint(large up) {
+          flex-wrap: wrap;
+        }
+      }
+
+      &-on-medium {
+        @include breakpoint(medium only) {
+          flex-wrap: wrap;
+        }
+      }
+
+      &-on-small {
+        @include breakpoint(small only) {
+          flex-wrap: wrap;
+        }
+      }
+    }
+
+    &-reversed {
+      &.on-large {
+        @include breakpoint(large up) {
+          flex-direction: row-reverse;
+        }
+      }
+
+      &.on-medium {
+        @include breakpoint(medium only) {
+          flex-direction: row-reverse;
+        }
+      }
+
+      &.on-small {
+        @include breakpoint(small only) {
+          flex-direction: row-reverse;
+        }
+      }
+    }
+  }
+
+  &-column {
+    display: flex;
+
+    &.on-large {
+      @include breakpoint(large up) {
+        flex-direction: column;
+      }
+    }
+
+    &.on-medium {
+      @include breakpoint(medium only) {
+        flex-direction: column;
+      }
+    }
+
+    &.on-small {
+      @include breakpoint(small only) {
+        flex-direction: column;
+      }
+    }
+
+    &-layout {
+      flex-direction: column;
+    }
+
+    &-reversed {
+      &.on-large {
+        @include breakpoint(large up) {
+          flex-direction: column-reverse;
+        }
+      }
+
+      &.on-medium {
+        @include breakpoint(medium only) {
+          flex-direction: column-reverse;
+        }
+      }
+
+      &.on-small {
+        @include breakpoint(small only) {
+          flex-direction: column-reverse;
+        }
+      }
+    }
+
+    &.max-height {
+      height: 100%;
+    }
+  }
+
+  &-flex-grow {
+    display: flex;
+
+    &-1 {
+      flex-grow: 1;
+    }
+
+    &-2 {
+      flex-grow: 2;
+    }
+
+    &-3 {
+      flex-grow: 3;
+    }
+
+    &-4 {
+      flex-grow: 4;
+    }
+  }
+
+  &-justify {
+    &-center {
+      justify-content: center;
+    }
+
+    &-start {
+      justify-content: flex-start;
+    }
+
+    &-end {
+      justify-content: flex-end;
+    }
+
+    &-space-between {
+      justify-content: space-between;
+    }
+
+    &-space-around {
+      justify-content: space-around;
+    }
+  }
+
+  &-justify-items {
+    &-center {
+      justify-items: center;
+    }
+
+    &-start {
+      justify-items: flex-start;
+    }
+
+    &-end {
+      justify-items: flex-end;
+    }
+  }
+
+  &-align-content {
+    &-center {
+      align-content: center;
+    }
+
+    &-start {
+      align-content: flex-start;
+    }
+
+    &-end {
+      align-content: flex-end;
+    }
+  }
+
+  &-align-items {
+    &-center {
+      align-items: center;
+    }
+
+    &-start {
+      align-items: flex-start;
+    }
+
+    &-end {
+      align-items: flex-end;
+    }
+  }
+
+  &-max-height {
+    height: 100%;
+  }
+
+  // basic style for component
+  &-area-component {
+    @include space-vertical($space-component, margin);
+  }
+
+  &-width {
+    @include widthArray;
+
+    @include breakpoint(small up) {
+      &-small {
+        @include widthArray;
+      }
+    }
+
+    @include breakpoint(medium up) {
+      &-medium {
+        @include widthArray;
+      }
+    }
+
+    @include breakpoint(small up) {
+      &-large {
+        @include widthArray;
+      }
+    }
+  }
+
+  &-display {
+    &-block {
+      display: block;
+    }
+
+    &-flex {
+      display: flex;
+    }
+
+    &-inline-block {
+      display: inline-block;
+    }
+
+    &-inline {
+      display: inline;
+    }
+  }
+
+  &-text {
+    &-center {
+      text-align: center;
+    }
+
+    &-left {
+      text-align: left;
+    }
+
+    &-right {
+      text-align: right;
+    }
+  }
+
+  &-mx-auto {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}

@@ -2,6 +2,9 @@
   "name": "dc-monorepo",
   "private": true,
   "scripts": {
+    "lerna": "lerna",
+    "bootstrap": "lerna bootstrap",
+    "publish": "lerna publish",
     "dev:docs": "yarn workspace dc-docs dev",
     "dev:objects": "yarn workspace @dc/objects dev",
     "build:objects:prepare": "yarn workspace @dc/objects dev:prepare",
@@ -26,5 +29,8 @@
     "eslint-plugin-vue": "^9.0.1",
     "lerna": "^4.0.0",
     "typescript": "^4.6.4"
+  },
+  "dependencies": {
+    "@changesets/cli": "^2.22.0"
   }
 }

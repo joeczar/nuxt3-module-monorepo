@@ -6,7 +6,6 @@
 </template>
 
 <script lang="ts">
-// import OTestButton from '@nuxt-module/dc-objects'
 
 export default {
   setup() {

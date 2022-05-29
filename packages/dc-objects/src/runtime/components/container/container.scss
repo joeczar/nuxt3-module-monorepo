@@ -1,0 +1,18 @@
+@import "@dc/styles/01-settings/index";
+
+// global grid classes based on foundation
+@import "@dc/styles/04-elements/grid";
+
+.o-container {
+  position: relative;
+
+  @include breakpoint(large) {
+    &.flex {
+      display: flex;
+
+      &.row-reverse {
+        flex-direction: row-reverse;
+      }
+    }
+  }
+}

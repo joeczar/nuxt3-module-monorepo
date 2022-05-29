@@ -1,0 +1,41 @@
+@import "../../index-for-components";
+
+/**
+ * Border
+ */
+
+.o-border {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
+  &::after {
+    display: block;
+    clear: both;
+    content: "";
+  }
+
+  > svg {
+    float: left;
+  }
+
+  &.is-regular {
+    @include property((border-bottom-left-radius, border-bottom-right-radius), $border-radius-bp);
+
+    height: 12px;
+
+    &.as-color-gradient {
+      background: linear-gradient(to right, $gradient-primary);
+    }
+
+    &.as-color-primary {
+      background: $color-primary;
+    }
+
+    &.as-color-secondary {
+      background: $color-secondary;
+    }
+  }
+}

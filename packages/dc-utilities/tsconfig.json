@@ -1,0 +1,16 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./dist",
+    "target": "esnext",
+    "module": "ES6",
+    "moduleResolution": "node",
+    "types": ["@types/node", "@nuxt/types", "@dc/types"],
+    "paths": {
+      "@/*": ["./*"]
+    },
+    "lib": ["es2020", "dom"]
+  },
+  "include": ["./index.ts"],
+  "exclude": ["./dist"]
+}

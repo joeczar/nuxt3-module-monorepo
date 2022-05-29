@@ -20,7 +20,7 @@
     "esModuleInterop": true,
     "lib": ["dom", "dom.iterable", "esnext", "webworker"],
     "forceConsistentCasingInFileNames": true,
-
+    
   },
   "exclude": ["node_modules", "**/*/lib", "dist"],
   "references": [

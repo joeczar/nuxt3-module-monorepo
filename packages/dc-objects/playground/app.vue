@@ -1,11 +1,5 @@
 <template>
   <div>
-    Nuxt module playground!
-    <o-test-button>
-      my button
-    </o-test-button>
+    <NuxtPage />
   </div>
 </template>
-
-<script setup>
-</script>

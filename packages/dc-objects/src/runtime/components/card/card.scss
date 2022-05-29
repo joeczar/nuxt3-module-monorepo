@@ -1,0 +1,88 @@
+@import "@dc/styles/index-for-components";
+
+/**
+ * Card
+ */
+.o-card {
+  $gutter: $space-medium;
+  $border-arrow-height: 18px;
+
+  position: relative;
+  overflow: hidden;
+
+  &:not(.has-background-class) {
+    background-color: white;
+  }
+
+  /* radius */
+  &:not(.as-small-radius) {
+    @include property(border-radius, $border-radius-bp);
+  }
+
+  > .inner {
+    box-sizing: border-box;
+    height: 100%;
+  }
+
+  /* modifier */
+  &.as-shadow-hard {
+    box-shadow: $box-shadow-hard;
+  }
+
+  &.as-shadow-soft {
+    box-shadow: $box-shadow-soft;
+  }
+
+  &.as-shadow-soft-small {
+    box-shadow: $box-shadow-soft-small;
+  }
+
+  &.as-small-radius {
+    border-radius: $border-radius-small;
+  }
+
+  /* padding */
+
+  &.as-default-padding {
+    > .inner {
+      padding: $gutter;
+    }
+
+    .add-card-negative-hoffset {
+      @include space-horizontal(-$gutter, margin);
+      @include property(margin-left margin-right, (-$space-default, -$space-large));
+    }
+  }
+
+  &.as-none-padding {
+    padding: 0;
+  }
+
+  &.as-small-padding {
+    > .inner {
+      padding: $space-tiny;
+    }
+  }
+
+  &.as-nottiny-padding {
+    > .inner {
+      padding: $space-small;
+    }
+  }
+
+  &.as-center-padding {
+    > .inner {
+      @include property(padding, $space-default $space-large);
+    }
+  }
+
+  // child flags
+  &.has-border {
+    @include property(padding-bottom, $border-height-bp);
+  }
+
+  &.has-arrow-border {
+    border-radius: $border-radius;
+    padding-bottom: $border-arrow-height;
+  }
+}

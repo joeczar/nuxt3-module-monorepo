@@ -1,11 +1,11 @@
 import { resolve, join } from 'path'
 import { fileURLToPath } from 'url'
-import { defineNuxtModule, addPlugin } from '@nuxt/kit'
+import { defineNuxtModule, addPlugin, createResolver, addComponentsDir, addAutoImport, resolveModule, extendPages } from '@nuxt/kit'
 
 export interface ModuleOptions {
   addPlugin: boolean
 }
-
+const resolvePath = (p: string) => resolve(join(__dirname, p))
 export default defineNuxtModule({
   meta: {
     name: '@dc/objects',
@@ -18,21 +18,26 @@ export default defineNuxtModule({
   defaults: {
     addPlugin: true
   },
-  hooks: {
-    'components:dirs'(dirs) {
-      // Add ./components dir to the list
-      dirs.push({
-        path: join(__dirname, 'components'),
-        prefix: 'o'
-      })
-      console.log('defineNuxtModule', { dirs })
-    }
-  },
-  setup (options, nuxt) {
+  async setup (options, nuxt) {
+    const { resolve } = createResolver(import.meta.url)
+    const resolveRuntimeModule = (path: string) => resolveModule(path, { paths: resolve('./runtime') })
+
+    console.log('defineNuxtModule', { options })
+
     if (options.addPlugin) {
       const runtimeDir = fileURLToPath(new URL('./runtime', import.meta.url))
       nuxt.options.build.transpile.push(runtimeDir)
       addPlugin(resolve(runtimeDir, 'plugin'))
     }
+    // Add composables
+    addAutoImport([
+      { name: 'useTheme', as: 'useTheme', from: resolveRuntimeModule('./composables/theme') }
+    ])
+
+    // Register components
+    await addComponentsDir({
+      path: resolve('./runtime/components'),
+      prefix: 'o'
+    })
   }
 })

@@ -1,0 +1,26 @@
+@import "@dc/styles/01-settings/index";
+
+/**
+ * Headline
+ */
+.o-headline {
+  &.has-default-space {
+    &:not(:first-child) {
+      margin-top: $space-xlarge;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: $space-small;
+    }
+  }
+
+  &.has-small-space {
+    &:not(:first-child) {
+      margin-top: $space-small;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: $space-medium;
+    }
+  }
+}

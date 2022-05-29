@@ -1,0 +1,20 @@
+{
+  "name": "@dc/types",
+  "version": "3.6.0",
+  "private": true,
+  "author": "Markus Flür <markus.fluer@db-n.com>",
+  "license": "ISC",
+  "main": "index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git@git.db-n.com:deutschlandcard/frontend/styleguide.git"
+  },
+  "scripts": {
+    "lint": "eslint --fix \"./**/*.ts\"",
+    "lint:check": "eslint \"./**/*.ts\"",
+    "build": "node build-index.js"
+  },
+  "dependencies": {
+    "vue": "^2.6.10"
+  }
+}

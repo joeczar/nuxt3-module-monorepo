@@ -1,0 +1,2424 @@
+{
+  ".vuepress": {
+    "components": {
+      "SGClassBlocks.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      },
+      "SGDocs.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      },
+      "SGLorem.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      },
+      "SGNavToggle.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      },
+      "SGPlaceholder.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      },
+      "SGToolbar.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "public": {
+      "webfonts": {}
+    },
+    "styles": {},
+    "templates": {}
+  },
+  "01-settings": {},
+  "02-tools": {
+    "functions": {},
+    "mixin": {
+      "vue": {}
+    },
+    "placeholder": {}
+  },
+  "03-generic": {},
+  "04-directives": {},
+  "04-elements": {},
+  "05-forms": {
+    "checkbox": {
+      "checkbox.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "code": {
+      "code.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "field": {
+      "field.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "group-permission": {
+      "group-permission.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "input": {
+      ".vuepress": {
+        "components": {
+          "SGCInput.vue": {
+            "lang=ts": false,
+            "defineComponent(": false,
+            "h1": false
+          }
+        }
+      },
+      "input.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      },
+      "text-input.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "radio": {
+      "radio.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "select": {
+      "select.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "selection-buttons": {
+      ".vuepress": {
+        "components": {
+          "SGCSelectionButtons.vue": {
+            "lang=ts": false,
+            "defineComponent(": false,
+            "h1": false
+          }
+        }
+      },
+      "selection-buttons.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "selection-card": {
+      "selection-card.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    }
+  },
+  "05-forms-new": {
+    "autocomplete": {
+      "autocomplete.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "birthdate": {
+      "birthdate.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "birthdatecleave": {
+      "birthdatecleave.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "card": {
+      "card.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "cardnumber": {
+      "cardnumber.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "checkbox": {
+      "checkbox.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      },
+      "checkboxField.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "checkboxarray": {
+      "checkboxarray.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "datepicker": {
+      "datepicker.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "factory": {
+      ".vuepress": {
+        "components": {
+          "SGCSmartFormFactory.vue": {
+            "lang=ts": false,
+            "defineComponent(": false,
+            "h1": false
+          },
+          "SGCStupidCardFactory.vue": {
+            "lang=ts": false,
+            "defineComponent(": false,
+            "h1": false
+          },
+          "SGCStupidFormFactory.vue": {
+            "lang=ts": false,
+            "defineComponent(": false,
+            "h1": false
+          }
+        }
+      },
+      "factory-condition.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      },
+      "factory-field-select.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      },
+      "factory-field.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      },
+      "factory.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      },
+      "field-select.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "phonenumber": {
+      "phonenumber.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "pinfield": {
+      "pinfield.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "promotioncode": {
+      "promotioncode.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "radiobuttons": {
+      "radiobuttons.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "radiofield": {
+      "radiofield.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "recaptcha": {
+      "recaptcha.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "selectfield": {
+      "selectfield.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "textfield": {
+      "textfield.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "upload": {
+      "upload.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "validation": {
+      ".vuepress": {
+        "components": {
+          "SGCFormValidation.vue": {
+            "lang=ts": false,
+            "defineComponent(": false,
+            "h1": false
+          }
+        }
+      }
+    }
+  },
+  "05-objects": {
+    "app-badges": {
+      "app-badges.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "badge": {
+      "badge.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "border": {
+      "border.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "bubbles": {
+      "_patterns": {},
+      "bubbles-item.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      },
+      "bubbles.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "button": {
+      "button-loginaware.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      },
+      "button.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "button-paragraph": {
+      "button-paragraph.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "card": {
+      "card.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "container": {
+      "container.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "cookie-layer": {
+      "cookie-layer.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "copyright": {
+      "copyright.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "countdown-clock": {
+      "countdown-clock-ts.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      },
+      "countdown-clock.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "counter-item": {
+      "counter-item.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "coupon": {
+      "coupon.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      },
+      "objects": {
+        "explain-overlay.vue": {
+          "lang=ts": false,
+          "defineComponent(": false,
+          "h1": false
+        },
+        "new-badge.vue": {
+          "lang=ts": false,
+          "defineComponent(": false,
+          "h1": false
+        }
+      }
+    },
+    "coupon-teaser": {
+      "coupon-teaser.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "error-message": {
+      "error-message.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "error-tracking": {
+      "error-tracking.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "eyecatcher": {
+      "eyecatcher.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "flap": {
+      "flap.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "grid": {
+      "grid-cell.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      },
+      "grid.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "header": {
+      "header.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "headline": {
+      "headline.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "icon": {
+      "_icons": {
+        "icon-arrow-right.vue": {
+          "lang=ts": false,
+          "defineComponent(": false,
+          "h1": false
+        },
+        "icon-back.vue": {
+          "lang=ts": false,
+          "defineComponent(": false,
+          "h1": false
+        },
+        "icon-calendar.vue": {
+          "lang=ts": false,
+          "defineComponent(": false,
+          "h1": false
+        },
+        "icon-check-circle.vue": {
+          "lang=ts": false,
+          "defineComponent(": false,
+          "h1": false
+        },
+        "icon-check.vue": {
+          "lang=ts": false,
+          "defineComponent(": false,
+          "h1": false
+        },
+        "icon-chevron-down.vue": {
+          "lang=ts": false,
+          "defineComponent(": false,
+          "h1": false
+        },
+        "icon-chevron-left.vue": {
+          "lang=ts": false,
+          "defineComponent(": false,
+          "h1": false
+        },
+        "icon-chevron-right.vue": {
+          "lang=ts": false,
+          "defineComponent(": false,
+          "h1": false
+        },
+        "icon-countdown.vue": {
+          "lang=ts": false,
+          "defineComponent(": false,
+          "h1": false
+        },
+        "icon-coupons.vue": {
+          "lang=ts": false,
+          "defineComponent(": false,
+          "h1": false
+        },
+        "icon-dcr-order.vue": {
+          "lang=ts": false,
+          "defineComponent(": false,
+          "h1": false
+        },
+        "icon-dcr-register.vue": {
+          "lang=ts": false,
+          "defineComponent(": false,
+          "h1": false
+        },
+        "icon-for-ort-punkten.vue": {
+          "lang=ts": false,
+          "defineComponent(": false,
+          "h1": false
+        },
+        "icon-go-to-top.vue": {
+          "lang=ts": false,
+          "defineComponent(": false,
+          "h1": false
+        },
+        "icon-help.vue": {
+          "lang=ts": false,
+          "defineComponent(": false,
+          "h1": false
+        },
+        "icon-info.vue": {
+          "lang=ts": false,
+          "defineComponent(": false,
+          "h1": false
+        },
+        "icon-informationen.vue": {
+          "lang=ts": false,
+          "defineComponent(": false,
+          "h1": false
+        },
+        "icon-localize.vue": {
+          "lang=ts": false,
+          "defineComponent(": false,
+          "h1": false
+        },
+        "icon-localizing.vue": {
+          "lang=ts": false,
+          "defineComponent(": false,
+          "h1": false
+        },
+        "icon-login.vue": {
+          "lang=ts": false,
+          "defineComponent(": false,
+          "h1": false
+        },
+        "icon-menu-close.vue": {
+          "lang=ts": false,
+          "defineComponent(": false,
+          "h1": false
+        },
+        "icon-menu.vue": {
+          "lang=ts": false,
+          "defineComponent(": false,
+          "h1": false
+        },
+        "icon-message.vue": {
+          "lang=ts": false,
+          "defineComponent(": false,
+          "h1": false
+        },
+        "icon-nav-right.vue": {
+          "lang=ts": false,
+          "defineComponent(": false,
+          "h1": false
+        },
+        "icon-partner.vue": {
+          "lang=ts": false,
+          "defineComponent(": false,
+          "h1": false
+        },
+        "icon-punkte.vue": {
+          "lang=ts": false,
+          "defineComponent(": false,
+          "h1": false
+        },
+        "icon-refresh.vue": {
+          "lang=ts": false,
+          "defineComponent(": false,
+          "h1": false
+        },
+        "icon-restaurant-menu.vue": {
+          "lang=ts": false,
+          "defineComponent(": false,
+          "h1": false
+        },
+        "icon-restaurant-order.vue": {
+          "lang=ts": false,
+          "defineComponent(": false,
+          "h1": false
+        },
+        "icon-search.vue": {
+          "lang=ts": false,
+          "defineComponent(": false,
+          "h1": false
+        },
+        "icon-social-fb.vue": {
+          "lang=ts": false,
+          "defineComponent(": false,
+          "h1": false
+        },
+        "icon-tab-list.vue": {
+          "lang=ts": false,
+          "defineComponent(": false,
+          "h1": false
+        },
+        "icon-tab-map.vue": {
+          "lang=ts": false,
+          "defineComponent(": false,
+          "h1": false
+        },
+        "icon-telephone.vue": {
+          "lang=ts": false,
+          "defineComponent(": false,
+          "h1": false
+        },
+        "icon-website.vue": {
+          "lang=ts": false,
+          "defineComponent(": false,
+          "h1": false
+        }
+      },
+      "icon.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "image": {
+      "image.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "image-teaser": {
+      "image-teaser.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "item-teaser": {
+      "item-teaser.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "json-ld": {
+      "json-ld.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "labeled-image": {
+      "labeled-image.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "line": {
+      "line.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "link": {
+      "link.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "linked-footer": {
+      "linked-footer.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "list": {
+      "list-item.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      },
+      "list.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "loader": {
+      "loader.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "loading-coupon": {
+      "loading-coupon.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "login-icon": {
+      "_icons": {
+        "icon-auto.vue": {
+          "lang=ts": false,
+          "defineComponent(": false,
+          "h1": false
+        },
+        "icon-bestellungen.vue": {
+          "lang=ts": false,
+          "defineComponent(": false,
+          "h1": false
+        },
+        "icon-daten.vue": {
+          "lang=ts": false,
+          "defineComponent(": false,
+          "h1": false
+        },
+        "icon-elektronik.vue": {
+          "lang=ts": false,
+          "defineComponent(": false,
+          "h1": false
+        },
+        "icon-ersatzkarte.vue": {
+          "lang=ts": false,
+          "defineComponent(": false,
+          "h1": false
+        },
+        "icon-essen.vue": {
+          "lang=ts": false,
+          "defineComponent(": false,
+          "h1": false
+        },
+        "icon-familie.vue": {
+          "lang=ts": false,
+          "defineComponent(": false,
+          "h1": false
+        },
+        "icon-finanzen.vue": {
+          "lang=ts": false,
+          "defineComponent(": false,
+          "h1": false
+        },
+        "icon-gewinnspiel.vue": {
+          "lang=ts": false,
+          "defineComponent(": false,
+          "h1": false
+        },
+        "icon-haus.vue": {
+          "lang=ts": false,
+          "defineComponent(": false,
+          "h1": false
+        },
+        "icon-kommunikation.vue": {
+          "lang=ts": false,
+          "defineComponent(": false,
+          "h1": false
+        },
+        "icon-kosmetik.vue": {
+          "lang=ts": false,
+          "defineComponent(": false,
+          "h1": false
+        },
+        "icon-mode.vue": {
+          "lang=ts": false,
+          "defineComponent(": false,
+          "h1": false
+        },
+        "icon-newsletter.vue": {
+          "lang=ts": false,
+          "defineComponent(": false,
+          "h1": false
+        },
+        "icon-online-punkten.vue": {
+          "lang=ts": false,
+          "defineComponent(": false,
+          "h1": false
+        },
+        "icon-pin-bearbeiten.vue": {
+          "lang=ts": false,
+          "defineComponent(": false,
+          "h1": false
+        },
+        "icon-pin-vergessen.vue": {
+          "lang=ts": false,
+          "defineComponent(": false,
+          "h1": false
+        },
+        "icon-praemie.vue": {
+          "lang=ts": false,
+          "defineComponent(": false,
+          "h1": false
+        },
+        "icon-profile-female.vue": {
+          "lang=ts": false,
+          "defineComponent(": false,
+          "h1": false
+        },
+        "icon-punktestand.vue": {
+          "lang=ts": false,
+          "defineComponent(": false,
+          "h1": false
+        },
+        "icon-reisen.vue": {
+          "lang=ts": false,
+          "defineComponent(": false,
+          "h1": false
+        },
+        "icon-sport.vue": {
+          "lang=ts": false,
+          "defineComponent(": false,
+          "h1": false
+        },
+        "icon-tiere.vue": {
+          "lang=ts": false,
+          "defineComponent(": false,
+          "h1": false
+        },
+        "icon-user-male.vue": {
+          "lang=ts": false,
+          "defineComponent(": false,
+          "h1": false
+        },
+        "icon-versand.vue": {
+          "lang=ts": false,
+          "defineComponent(": false,
+          "h1": false
+        },
+        "icon-vor-ort-punkten.vue": {
+          "lang=ts": false,
+          "defineComponent(": false,
+          "h1": false
+        },
+        "icon-wunschliste.vue": {
+          "lang=ts": false,
+          "defineComponent(": false,
+          "h1": false
+        }
+      },
+      "login-icon.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "login-label": {
+      "login-label.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "maintenance-dialog": {
+      "maintenance-dialog.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "mini-coupon": {
+      "mini-coupon.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "mobile-head-limiter": {
+      "mobile-head-limiter.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "modal": {
+      "modal.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "notification": {
+      "notification.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "page-reload": {
+      "page-reload.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "paragraph": {
+      "paragraph.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "partner-button": {
+      "partner-button.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "partner-logo": {
+      "partner-logo.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "partner-teaser": {
+      "partner-teaser.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "partner-teaser-small": {
+      "partner-teaser-small.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "placeholder-card": {
+      "placeholder-card.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "point-threshold-teaser": {
+      "point-threshold-teaser.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "points": {
+      "points.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "profile-menu": {
+      "profile-menu.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "quote": {
+      "quote.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "rating": {
+      "rating.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "recaptcha": {
+      "recaptcha.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "related-teaser": {
+      "related-teaser.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "scroller": {
+      "scroller.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "search-input": {
+      "search-input.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "shop-teaser": {
+      "shop-teaser.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "simple-text-format": {
+      "simple-text-format.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "slider": {
+      "modules": {
+        "slide.vue": {
+          "lang=ts": false,
+          "defineComponent(": false,
+          "h1": false
+        },
+        "slider-dots.vue": {
+          "lang=ts": false,
+          "defineComponent(": false,
+          "h1": false
+        }
+      },
+      "slider.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "spinner": {
+      "spinner.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "tab": {
+      "tab.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "toggle-button": {
+      "toggle-button.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "user-content": {
+      "user-content.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "videoplayer": {
+      "play_icon.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      },
+      "videoplayer.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "xl-partner-teaser": {
+      "xl-partner-teaser.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    }
+  },
+  "06-components": {
+    "action-countdown": {
+      "action-countdown.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      },
+      "images": {},
+      "objects": {
+        "timer.vue": {
+          "lang=ts": false,
+          "defineComponent(": false,
+          "h1": false
+        }
+      }
+    },
+    "action-module": {
+      "action-module.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "app-teaser": {
+      "app-teaser.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "article": {
+      ".vuepress": {
+        "components": {
+          "SGCArticle.vue": {
+            "lang=ts": false,
+            "defineComponent(": false,
+            "h1": false
+          }
+        }
+      },
+      "article.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "bonus-teasers": {
+      "bonus-teaser.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      },
+      "bonus-teasers-flow.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      },
+      "bonus-teasers.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "business-footer": {
+      ".vuepress": {
+        "components": {
+          "SGCBusinessFooter.vue": {
+            "lang=ts": false,
+            "defineComponent(": false,
+            "h1": false
+          }
+        },
+        "fixtures": {}
+      },
+      "business-footer.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      },
+      "objects": {
+        "accordion-group.vue": {
+          "lang=ts": false,
+          "defineComponent(": false,
+          "h1": false
+        }
+      }
+    },
+    "business-navigation": {
+      "business-navigation.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      },
+      "objects": {
+        "items.vue": {
+          "lang=ts": false,
+          "defineComponent(": false,
+          "h1": false
+        }
+      }
+    },
+    "carousel3d": {
+      "carousel3d.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      },
+      "controls.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      },
+      "mixins": {},
+      "slide.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "consent-overlay": {
+      "consent-overlay.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "contact-form": {
+      "contact-form.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "contact-request": {
+      "contact-request.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "contacts": {
+      "contacts.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "content-article": {
+      "content-article.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "content-grid": {
+      ".vuepress": {
+        "components": {
+          "SGCContent.vue": {
+            "lang=ts": false,
+            "defineComponent(": false,
+            "h1": false
+          }
+        }
+      },
+      "content-grid.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "content-navigation": {
+      "content-navigation.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "counter": {
+      "counter.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "coupon-section": {
+      "coupon-filter.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      },
+      "coupon-section.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "coupon-teaser": {
+      "coupon-teaser.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "customer-footer": {
+      ".vuepress": {
+        "components": {
+          "SGCCustomerFooter.vue": {
+            "lang=ts": false,
+            "defineComponent(": false,
+            "h1": false
+          }
+        },
+        "fixtures": {}
+      },
+      "customer-footer.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      },
+      "objects": {
+        "accordion-group.vue": {
+          "lang=ts": false,
+          "defineComponent(": false,
+          "h1": false
+        },
+        "sourcepoint-link.vue": {
+          "lang=ts": false,
+          "defineComponent(": false,
+          "h1": false
+        }
+      }
+    },
+    "customer-navigation": {
+      "customer-navigation.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      },
+      "objects": {
+        "items.vue": {
+          "lang=ts": false,
+          "defineComponent(": false,
+          "h1": false
+        }
+      }
+    },
+    "customer-stage": {
+      "customer-stage.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "donation": {
+      "donation.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "ewe-modul": {
+      "ewe-module.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "faq-article": {
+      "faq-article.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "faq-category": {
+      "faq-category.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "faq-main": {
+      "faq-main.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "faq-module": {
+      "faq-module.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "feature-teaser": {
+      "feature-teaser.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "finder": {
+      "assets": {},
+      "finder.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      },
+      "misc": {},
+      "objects": {
+        "finder-detail": {
+          "finder-detail.vue": {
+            "lang=ts": false,
+            "defineComponent(": false,
+            "h1": false
+          }
+        },
+        "finder-result-base": {
+          "finder-result-base.vue": {
+            "lang=ts": false,
+            "defineComponent(": false,
+            "h1": false
+          }
+        }
+      }
+    },
+    "fixed-overlay-container": {
+      "fixed-overlay-container.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "fullwidth-module": {
+      "fullwidth-module.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "glossary-article": {
+      "glossary-article.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "glossary-main": {
+      "glossary-main.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "go-to-top": {
+      "c-go-to-top.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "headline": {
+      "headline.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "highlight-teaser": {
+      "highlight-teaser.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "item-teaser": {
+      "item-teaser-row.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      },
+      "item-teaser.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "legal-text": {
+      "legal-text.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "link-list": {
+      "link-list.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "linklist-b2b": {
+      "linklist-b2b.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "logo-header": {
+      "logo-header.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "multi-teaser": {
+      "multi-teaser.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "navigation": {
+      "navigation-mobile-search-layer.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      },
+      "navigation.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "navigation-layer": {
+      "navigation-layer.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "navigation-mobile-bar": {
+      "navigation-mobile-bar.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "newsletter-registration": {
+      "blocks": {
+        "confirm.vue": {
+          "lang=ts": false,
+          "defineComponent(": false,
+          "h1": false
+        },
+        "subscribe.vue": {
+          "lang=ts": false,
+          "defineComponent(": false,
+          "h1": false
+        }
+      },
+      "newsletter-registration.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "opt-in-teaser": {
+      "opt-in-teaser.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "overlay": {
+      ".vuepress": {
+        "components": {
+          "SGOverlay.vue": {
+            "lang=ts": false,
+            "defineComponent(": false,
+            "h1": false
+          }
+        }
+      },
+      "overlay-content.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      },
+      "overlay.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "partner-board": {
+      "partner-board.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "partner-button-viewport": {
+      "partner-button-viewport.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "partner-circle": {
+      "partner-circle.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "partner-logos": {
+      "partner-logos.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "partner-overview": {
+      "partner-overview.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "partner-section": {
+      "objects": {
+        "badge-list.vue": {
+          "lang=ts": false,
+          "defineComponent(": false,
+          "h1": false
+        }
+      },
+      "partner-filter.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      },
+      "partner-grid.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      },
+      "partner-list.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      },
+      "partner-section.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "partner-split-logos": {
+      "components": {
+        "group.vue": {
+          "lang=ts": false,
+          "defineComponent(": false,
+          "h1": false
+        }
+      },
+      "partner-split-logos.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "partner-stage": {
+      "partner-stage.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "partner-teaser-section": {
+      "partner-teaser-section.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "point-info": {
+      "objects": {
+        "card-popup.vue": {
+          "lang=ts": false,
+          "defineComponent(": false,
+          "h1": false
+        },
+        "coupon-incentive.vue": {
+          "lang=ts": false,
+          "defineComponent(": false,
+          "h1": false
+        }
+      },
+      "point-info.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "process-banner": {
+      "process-banner.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "process-card": {
+      "object": {
+        "bubbles": {
+          "bubbles.vue": {
+            "lang=ts": false,
+            "defineComponent(": false,
+            "h1": false
+          }
+        }
+      },
+      "process-card.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "redirect": {
+      "redirect.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "rich-paragraph": {
+      "rich-paragraph.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "search-noresult": {
+      "search-noresult.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "search-result-section": {
+      "objects": {
+        "search-result-local.vue": {
+          "lang=ts": false,
+          "defineComponent(": false,
+          "h1": false
+        }
+      },
+      "search-result-all.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      },
+      "search-result-filter.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      },
+      "search-result-prime.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      },
+      "search-result-section.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      },
+      "search-result-shops.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "shop-redirect": {
+      "shop-redirect.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      },
+      "test": {}
+    },
+    "simple-footer": {
+      "simple-footer.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "simple-teaser": {
+      "simple-teaser.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "split-teaser": {
+      "split-teaser.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "stage": {
+      "objects": {
+        "background.vue": {
+          "lang=ts": false,
+          "defineComponent(": false,
+          "h1": false
+        }
+      },
+      "stage.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "sticky-bottom-layer": {
+      "sticky-bottom-layer.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "sweepstake-stage": {
+      "images": {},
+      "sweepstake-stage.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "testimonials": {
+      "testimonials.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "text-image-module": {
+      "c-text-image-module.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "usp-teasers": {
+      "usp-teasers.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "xl-partner-teaser-section": {
+      "xl-partner-teaser-section.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    }
+  },
+  "06-components-campaigns": {
+    "adcampaign": {
+      "adcampaign.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "adventskalender": {
+      "adventskalender-layer.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      },
+      "adventskalender.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      },
+      "blume-loader.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      },
+      "leaflet": {
+        "images": {}
+      }
+    },
+    "blumen": {
+      "blume-loader.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      },
+      "blumen.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "crazy-animal": {
+      "crazy-animal.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "crossword-stage": {
+      "crossword-stage.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "dreh-stage": {
+      "dreh-stage.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      },
+      "prize-renderer.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "gluecksrad": {
+      "gluecksrad.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      },
+      "mini-coupon.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      },
+      "prize-renderer.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "kuchen": {
+      "kuchen-loader.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      },
+      "kuchen.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "lotto-stage": {
+      "lotto-stage.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      },
+      "modules": {
+        "week-module.vue": {
+          "lang=ts": false,
+          "defineComponent(": false,
+          "h1": false
+        }
+      },
+      "prize-renderer.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "memory-stage": {
+      "assets": {},
+      "c-memory-stage.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      },
+      "modules": {
+        "memory-card.vue": {
+          "lang=ts": false,
+          "defineComponent(": false,
+          "h1": false
+        },
+        "memory-game.vue": {
+          "lang=ts": false,
+          "defineComponent(": false,
+          "h1": false
+        },
+        "progress-bar.vue": {
+          "lang=ts": false,
+          "defineComponent(": false,
+          "h1": false
+        }
+      },
+      "utils": {}
+    },
+    "mystery-stage": {
+      "mystery-stage.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "punktefest": {
+      "modules": {
+        "PartnerButton.vue": {
+          "lang=ts": false,
+          "defineComponent(": false,
+          "h1": false
+        }
+      },
+      "punktefest.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "punktejagd": {
+      "punktejagd.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "sudoku": {
+      "modules": {
+        "sudoku-loader.vue": {
+          "lang=ts": false,
+          "defineComponent(": false,
+          "h1": false
+        },
+        "sudokufield.vue": {
+          "lang=ts": false,
+          "defineComponent(": false,
+          "h1": false
+        }
+      },
+      "sudoku.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "sweepstake": {
+      "components": {
+        "finished.vue": {
+          "lang=ts": false,
+          "defineComponent(": false,
+          "h1": false
+        }
+      },
+      "sweepstake.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "tippspiel": {
+      "prize-renderer-tippspiel.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      },
+      "tippspiel.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "voucher": {
+      "voucher.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    }
+  },
+  "06-components-user": {
+    "card-replacement": {
+      "card-replacement.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "contact": {
+      "contact.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "login-dialog": {
+      "components": {
+        "grid.vue": {
+          "lang=ts": false,
+          "defineComponent(": false,
+          "h1": false
+        },
+        "input.vue": {
+          "lang=ts": false,
+          "defineComponent(": false,
+          "h1": false
+        }
+      },
+      "login-dialog.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "login-notification": {
+      "login-notification.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "onboarding-stage": {
+      "onboarding-stage.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "pin-change": {
+      "pin-change.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "pin-forgotten": {
+      "pin-forgotten.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "profile": {
+      "profile-additional-info.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      },
+      "profile.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "transactions": {
+      "objects": {
+        "booking.vue": {
+          "lang=ts": false,
+          "defineComponent(": false,
+          "h1": false
+        }
+      },
+      "user-transactions.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    }
+  },
+  "07-trumps": {
+    "article-renderer": {
+      ".vuepress": {
+        "components": {
+          "SGCArticleRenderer.vue": {
+            "lang=ts": false,
+            "defineComponent(": false,
+            "h1": false
+          }
+        },
+        "fixtures": {}
+      },
+      "article-renderer.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "form-validation": {
+      ".vuepress": {
+        "components": {
+          "SGCFormValidation.vue": {
+            "lang=ts": false,
+            "defineComponent(": false,
+            "h1": false
+          }
+        }
+      }
+    },
+    "logout-modal": {
+      "logout-modal.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "page-renderer": {
+      ".vuepress": {
+        "components": {
+          "SGCConfigurator.vue": {
+            "lang=ts": false,
+            "defineComponent(": false,
+            "h1": false
+          }
+        },
+        "fixtures": {}
+      },
+      "page-renderer.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "sweepstake-renderer": {
+      ".vuepress": {
+        "components": {
+          "SGCSweepstake.vue": {
+            "lang=ts": false,
+            "defineComponent(": false,
+            "h1": false
+          }
+        }
+      },
+      "components": {
+        "finished.vue": {
+          "lang=ts": false,
+          "defineComponent(": false,
+          "h1": false
+        }
+      },
+      "sweepstake-renderer.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "tracking": {
+      ".vuepress": {
+        "components": {
+          "SGCTracking.vue": {
+            "lang=ts": false,
+            "defineComponent(": false,
+            "h1": false
+          }
+        }
+      }
+    }
+  },
+  "08-abstracts": {
+    "promotion-stage": {
+      "promotion-stage.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    }
+  },
+  "10-depreciated": {
+    "checkboxarray": {
+      "checkboxarray.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    },
+    "datepicker": {
+      "datepicker.vue": {
+        "lang=ts": false,
+        "defineComponent(": false,
+        "h1": false
+      }
+    }
+  },
+  "assets": {
+    "aktionen": {
+      "3-aus-99": {},
+      "Adventskalender": {},
+      "Kuchen": {},
+      "Punktefest": {},
+      "Sudoku": {},
+      "crazy-lama": {},
+      "memory": {},
+      "puep2": {}
+    },
+    "decoration": {
+      "action-countdown": {},
+      "app-teaser": {},
+      "c-finder": {
+        "cluster": {}
+      },
+      "c-stage": {},
+      "customer-stage": {},
+      "maintenance": {},
+      "mobile-search": {},
+      "promotion": {}
+    },
+    "elements": {},
+    "icons": {},
+    "login": {},
+    "logo": {},
+    "teaser": {}
+  },
+  "docs": {
+    "core": {},
+    "user": {
+      "img": {}
+    }
+  },
+  "filters": {},
+  "plugins": {
+    "api": {},
+    "coupons": {},
+    "newsletter": {},
+    "sparkle": {},
+    "sweepstake": {},
+    "tracking": {},
+    "translation": {
+      "filters": {},
+      "mixins": {},
+      "services": {}
+    },
+    "user": {
+      "modules": {
+        "cookie": {},
+        "login": {},
+        "profile": {},
+        "single-use-token": {},
+        "token-cache": {}
+      },
+      "services": {}
+    },
+    "validation": {
+      "mixin": {},
+      "validators": {}
+    }
+  },
+  "services": {
+    "support-classes": {}
+  },
+  "themes": {
+    "customer": {
+      "01-settings": {}
+    }
+  },
+  "utilites": {
+    "Converter": {
+      "Factory": {}
+    },
+    "Mapper": {},
+    "is": {},
+    "theme": {},
+    "vue": {}
+  }
+}

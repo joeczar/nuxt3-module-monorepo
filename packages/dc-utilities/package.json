@@ -1,0 +1,52 @@
+{
+  "name": "@dc/utilities",
+  "version": "3.6.0",
+  "private": true,
+  "author": "Robert Wawrzyniak <robert.wawrzyniak@db-n.com>",
+  "license": "ISC",
+  "main": "index.js",
+  "module": "index.js",
+  "directories": {
+    "lib": "./",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@git.db-n.com:deutschlandcard/frontend/styleguide.git"
+  },
+  "scripts": {
+    "build": "yarn build:esm && yarn build:cjs && yarn build:amd",
+    "build:esm": "tsc --project ./ --outDir dist/esm --target esnext --module esnext --skipLibCheck",
+    "build:cjs": "tsc --project ./ --outDir dist/cjs --target es6  --module commonjs --skipLibCheck",
+    "build:amd": "tsc --project ./ --target es5  --module amd --skipLibCheck --outFile dist/index.amd.js",
+    "babel": "babel ./*.js __tests__/* --out-dir lib",
+    "test": "cross-env NODE_ENV=test yarn _test",
+    "test:dev": "yarn test --watchAll",
+    "test:update": "yarn test -u",
+    "test:int": "cross-env NODE_ENV=integration yarn _test",
+    "test:log": "cross-env LOG=1 yarn test",
+    "test:ci": "yarn test --ci --reporters=default --reporters=jest-junit --coverage",
+    "_fmt": "prettier \"./**/*.{js,vue,scss,md,json,yml,yaml}\"",
+    "fmt": "yarn _fmt --write ",
+    "fmt:check": "yarn _fmt -l",
+    "_lint:ts": "eslint",
+    "lint:ts": "yarn _lint:ts --fix \"./**/*.{ts,js,vue}\"",
+    "lint:ts:check": "yarn _lint:ts \"./**/*.{ts,js,vue}\"",
+    "_lint:scss": "stylelint \"src/**/*.scss\"",
+    "lint:scss": "yarn _lint:scss --fix",
+    "lint:scss:check": "yarn _lint:scss",
+    "lint": "yarn lint:ts",
+    "lint:check": "yarn lint:ts:check",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@babel/compat-data": "^7.8.0",
+    "@babel/runtime-corejs3": "^7.8.4",
+    "@dc/types": "^3.6.0",
+    "axios": "^0.24.0",
+    "lodash": "^4.17.15"
+  }
+}

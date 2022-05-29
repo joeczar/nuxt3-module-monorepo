@@ -1,0 +1,26 @@
+// babel.config.js
+module.exports = {
+  presets: [
+    [
+      "@babel/preset-env",
+      {
+        targets: "ie 11",
+        useBuiltIns: "usage",
+        corejs: 3
+      }
+    ]
+  ],
+  env: {
+    test: {
+      presets: [
+        [
+          "@babel/preset-env",
+          {
+            useBuiltIns: "usage",
+            corejs: 3
+          }
+        ]
+      ]
+    }
+  }
+};
